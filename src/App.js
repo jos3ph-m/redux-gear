@@ -15,7 +15,7 @@ import cartItems from './cart-items';
 
 import { createStore } from 'redux';
 //reducer
-function reducer() {
+function reducer(state, action) {
   console.log('shake and bake');
 }
 
