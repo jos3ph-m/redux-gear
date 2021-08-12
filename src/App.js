@@ -9,6 +9,7 @@ import cartItems from './cart-items';
 // store - stores data, think of state
 // reducer - function that used to update store
 // two arguments - state, action
+// state - old state/state before update
 
 import { createStore } from 'redux';
 //reducer
