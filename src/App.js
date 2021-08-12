@@ -14,12 +14,18 @@ import cartItems from './cart-items';
 // return updated or old state
 
 import { createStore } from 'redux';
+// initial store
+const initialStore = {
+  count: 0,
+};
+
 //reducer
 function reducer(state, action) {
   console.log({ state, action });
+  return state;
 }
 
-const store = createStore(reducer);
+const store = createStore(reducer, initialStore);
 
 function App() {
   // cart setup
