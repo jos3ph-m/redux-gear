@@ -9,6 +9,8 @@ import cartItems from './cart-items';
 // store - stores data, think of state
 // reducer - function that used to update store
 
+import { createStore } from 'redux';
+
 function App() {
   // cart setup
 
