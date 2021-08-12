@@ -10,8 +10,12 @@ import cartItems from './cart-items';
 // reducer - function that used to update store
 
 import { createStore } from 'redux';
+//reducer
+function reducer() {
+  console.log('shake and bake');
+}
 
-const store = createStore(() => {});
+const store = createStore(reducer);
 
 function App() {
   // cart setup
