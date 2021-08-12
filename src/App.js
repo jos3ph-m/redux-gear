@@ -11,6 +11,8 @@ import cartItems from './cart-items';
 
 import { createStore } from 'redux';
 
+const store = createStore();
+
 function App() {
   // cart setup
 
