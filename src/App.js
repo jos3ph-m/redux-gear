@@ -12,6 +12,7 @@ import cartItems from './cart-items';
 // state - old state/state before update
 // action - what happened/ what update
 // return updated or old state
+// dispatch method - send actions to the store
 
 import { createStore } from 'redux';
 
