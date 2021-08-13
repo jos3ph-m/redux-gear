@@ -28,6 +28,9 @@ const initialStore = {
 //reducer
 function reducer(state, action) {
   console.log({ state, action });
+  if (action.type === 'DECREASE') {
+    console.log(`hey the type is ${action.type}`);
+  }
   return state;
 }
 
