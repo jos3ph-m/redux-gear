@@ -33,12 +33,18 @@ function reducer(state, action) {
     // state.count = state.count - 1;
     return { count: state.count - 1 };
   }
+  if (action.type === 'INCREASE') {
+    return { count: state.count + 1 };
+  }
   return state;
 }
 
 // store
 const store = createStore(reducer, initialStore);
 store.dispatch({ type: 'DECREASE' });
+store.dispatch({ type: 'INCREASE' });
+store.dispatch({ type: 'INCREASE' });
+store.dispatch({ type: 'RESET' });
 console.log(store.getState());
 
 function App() {
