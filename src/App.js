@@ -45,6 +45,7 @@ function reducer(state, action) {
 // store
 const store = createStore(reducer, initialStore);
 store.dispatch({ type: 'DECREASE' });
+store.dispatch({ type: 'RANDOM' });
 store.dispatch({ type: 'RESET' });
 store.dispatch({ type: 'INCREASE' });
 store.dispatch({ type: 'INCREASE' });
