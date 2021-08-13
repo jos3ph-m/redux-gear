@@ -14,6 +14,9 @@ import cartItems from './cart-items';
 // return updated or old state
 
 import { createStore } from 'redux';
+
+// store.getState()
+
 // initial store
 const initialStore = {
   count: 0,
@@ -26,13 +29,14 @@ function reducer(state, action) {
 }
 
 const store = createStore(reducer, initialStore);
+console.log(store.getState());
 
 function App() {
   // cart setup
 
   return (
     <main>
-      <Navbar />
+      <Navbar cart={store.getState()} />
       <CartContainer cart={cartItems} />
     </main>
   );
