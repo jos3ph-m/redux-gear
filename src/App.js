@@ -31,7 +31,9 @@ function reducer(state, action) {
   return state;
 }
 
+// store
 const store = createStore(reducer, initialStore);
+store.dispatch({ type: 'DECREASE' });
 console.log(store.getState());
 
 function App() {
