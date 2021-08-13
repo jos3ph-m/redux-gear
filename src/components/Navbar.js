@@ -1,5 +1,5 @@
-import React from "react";
-const Navbar = () => {
+import React from 'react';
+const Navbar = ({ cart }) => {
   return (
     <nav>
       <div className="nav-center">
