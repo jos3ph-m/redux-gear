@@ -13,6 +13,8 @@ import cartItems from './cart-items';
 // action - what happened/ what update
 // return updated or old state
 // dispatch method - send actions to the store
+// actions (objects) - MUST HAVE TYPE PROPERTY - what kind of action
+// DON'T MUTATE THE STATE - redux built on IMMUTABILITY(copy)
 
 import { createStore } from 'redux';
 
