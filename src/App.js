@@ -23,6 +23,7 @@ import { createStore } from 'redux';
 // initial store
 const initialStore = {
   count: 0,
+  name: 'joey',
 };
 
 //reducer
