@@ -35,10 +35,10 @@ function reducer(state, action) {
     return { ...state, count: state.count - 1 };
   }
   if (action.type === 'INCREASE') {
-    return { count: state.count + 1 };
+    return { ...state, count: state.count + 1 };
   }
   if (action.type === 'RESET') {
-    return { count: 0 };
+    return { ...state, count: 0 };
   }
   return state;
 }
