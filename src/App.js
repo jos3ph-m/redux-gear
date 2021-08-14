@@ -41,7 +41,7 @@ function reducer(state, action) {
     return { ...state, count: 0 };
   }
   if (action.type === 'CHANGE_NAME') {
-    return { ...state };
+    return { ...state, name: 'audrey' };
   }
   return state;
 }
