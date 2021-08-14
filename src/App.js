@@ -53,6 +53,8 @@ store.dispatch({ type: 'CHANGE_NAME' });
 store.dispatch({ type: 'RESET' });
 store.dispatch({ type: 'INCREASE' });
 store.dispatch({ type: 'INCREASE' });
+store.dispatch({ type: 'INCREASE' });
+store.dispatch({ type: 'INCREASE' });
 console.log(store.getState());
 
 function App() {
