@@ -40,6 +40,9 @@ function reducer(state, action) {
   if (action.type === 'RESET') {
     return { ...state, count: 0 };
   }
+  if (action.type === 'CHANGE_NAME') {
+    return { ...state };
+  }
   return state;
 }
 
