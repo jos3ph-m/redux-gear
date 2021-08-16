@@ -29,8 +29,6 @@ const initialStore = {
 // keeping all actions as variables
 const DECREASE = 'DECREASE';
 const INCREASE = 'INCREASE';
-const RESET = 'RESET';
-const CHANGE_NAME = 'CHANGE_NAME';
 
 //reducer
 function reducer(state, action) {
@@ -43,20 +41,13 @@ function reducer(state, action) {
   if (action.type === INCREASE) {
     return { ...state, count: state.count + 1 };
   }
-  if (action.type === RESET) {
-    return { ...state, count: 0 };
-  }
-  if (action.type === CHANGE_NAME) {
-    return { ...state, name: 'audrey' };
-  }
+
   return state;
 }
 
 // store
 const store = createStore(reducer, initialStore);
 store.dispatch({ type: DECREASE });
-store.dispatch({ type: CHANGE_NAME });
-store.dispatch({ type: RESET });
 store.dispatch({ type: INCREASE });
 store.dispatch({ type: INCREASE });
 store.dispatch({ type: INCREASE });
