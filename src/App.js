@@ -35,7 +35,7 @@ function App() {
 
   return (
     <main>
-      <Navbar cart={store.getState()} />
+      <Navbar />
       <CartContainer cart={cartItems} />
     </main>
   );
