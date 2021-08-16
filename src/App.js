@@ -26,6 +26,7 @@ const initialStore = {
   name: 'joey',
 };
 
+// keeping all actions as variables
 const DECREASE = 'DECREASE';
 const INCREASE = 'INCREASE';
 const RESET = 'RESET';
