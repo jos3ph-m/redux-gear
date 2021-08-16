@@ -17,7 +17,7 @@ import cartItems from './cart-items';
 // DON'T MUTATE THE STATE - redux built on IMMUTABILITY(copy)
 
 import { createStore } from 'redux';
-import { DECREASE, INCREASE } from './actions';
+
 import reducer from './reducer';
 
 // initial store
