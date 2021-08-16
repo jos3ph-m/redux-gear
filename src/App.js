@@ -29,8 +29,6 @@ const initialStore = {
   amount: 0,
 };
 
-//reducer
-
 // store
 const store = createStore(reducer, initialStore);
 
