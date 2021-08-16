@@ -33,11 +33,7 @@ const initialStore = {
 
 // store
 const store = createStore(reducer, initialStore);
-store.dispatch({ type: DECREASE });
-store.dispatch({ type: INCREASE });
-store.dispatch({ type: INCREASE });
-store.dispatch({ type: INCREASE });
-store.dispatch({ type: INCREASE });
+
 console.log(store.getState());
 
 function App() {
