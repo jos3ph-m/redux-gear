@@ -26,6 +26,7 @@ import reducer from './reducer';
 const initialStore = {
   cart: cartItems,
   total: 0,
+  amount: 0,
 };
 
 //reducer
