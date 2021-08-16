@@ -24,8 +24,7 @@ import reducer from './reducer';
 
 // initial store
 const initialStore = {
-  count: 0,
-  name: 'joey',
+  cart: cartItems,
 };
 
 //reducer
