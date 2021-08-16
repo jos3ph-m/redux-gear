@@ -18,6 +18,7 @@ import cartItems from './cart-items';
 
 import { createStore } from 'redux';
 import { DECREASE, INCREASE } from './actions';
+import reducer from './reducer';
 
 // store.getState()
 

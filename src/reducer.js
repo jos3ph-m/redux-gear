@@ -1,3 +1,5 @@
+import { DECREASE, INCREASE } from './actions';
+
 function reducer(state, action) {
   console.log({ state, action });
   if (action.type === DECREASE) {
