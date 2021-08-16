@@ -17,6 +17,7 @@ import cartItems from './cart-items';
 // DON'T MUTATE THE STATE - redux built on IMMUTABILITY(copy)
 
 import { createStore } from 'redux';
+import { DECREASE, INCREASE } from './actions';
 
 // store.getState()
 
@@ -25,10 +26,6 @@ const initialStore = {
   count: 0,
   name: 'joey',
 };
-
-// keeping all actions as variables
-const DECREASE = 'DECREASE';
-const INCREASE = 'INCREASE';
 
 //reducer
 function reducer(state, action) {
