@@ -20,8 +20,6 @@ import { createStore } from 'redux';
 import { DECREASE, INCREASE } from './actions';
 import reducer from './reducer';
 
-// store.getState()
-
 // initial store
 const initialStore = {
   cart: cartItems,
