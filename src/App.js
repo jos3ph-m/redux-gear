@@ -25,10 +25,10 @@ function App() {
   // cart setup
 
   return (
-    <main>
+    <Provider>
       <Navbar />
       <CartContainer cart={cartItems} />
-    </main>
+    </Provider>
   );
 }
 
