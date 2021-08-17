@@ -20,6 +20,7 @@ const Navbar = () => {
 
 const mapStateToProps = (state) => {
   console.log(state);
+  return { amount: state.amount };
 };
 
 export default connect(mapStateToProps)(Navbar);
