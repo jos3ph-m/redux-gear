@@ -18,4 +18,8 @@ const Navbar = () => {
   );
 };
 
-export default connect()(Navbar);
+const mapStateToProps = (state) => {
+  console.log(state);
+};
+
+export default connect(mapStateToProps)(Navbar);
