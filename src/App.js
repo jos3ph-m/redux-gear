@@ -25,7 +25,7 @@ function App() {
   // cart setup
 
   return (
-    <Provider>
+    <Provider store={store}>
       <Navbar />
       <CartContainer cart={cartItems} />
     </Provider>
