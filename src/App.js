@@ -9,6 +9,7 @@ import cartItems from './cart-items';
 import { createStore } from 'redux';
 import reducer from './reducer';
 // react-redux - Provider - wraps app, connect - used in components
+import { Provider } from 'react-redux';
 
 // initial store
 const initialStore = {
