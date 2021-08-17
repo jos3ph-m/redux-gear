@@ -7,8 +7,8 @@ import cartItems from './cart-items';
 // redux stuff
 
 import { createStore } from 'redux';
-
 import reducer from './reducer';
+// react-redux - Provider - wraps app, connect - used in components
 
 // initial store
 const initialStore = {
