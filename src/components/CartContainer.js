@@ -39,4 +39,11 @@ const CartContainer = ({ cart = [] }) => {
   );
 };
 
+const mapStateToProps = (store) => {
+  return {
+    cart: store.cart,
+    total: store.total,
+  };
+};
+
 export default connect(mapStateToProps)(CartContainer);
