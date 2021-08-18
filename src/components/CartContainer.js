@@ -1,5 +1,6 @@
-import React from "react";
-import CartItem from "./CartItem";
+import React from 'react';
+import CartItem from './CartItem';
+import { connect } from 'react-redux';
 const CartContainer = ({ cart = [] }) => {
   if (cart.length === 0) {
     return (
@@ -20,7 +21,7 @@ const CartContainer = ({ cart = [] }) => {
       </header>
       {/* cart items */}
       <article>
-        {cart.map(item => {
+        {cart.map((item) => {
           return <CartItem key={item.id} {...item} />;
         })}
       </article>
