@@ -40,9 +40,10 @@ const CartContainer = ({ cart = [] }) => {
 };
 
 const mapStateToProps = (store) => {
+  const { cart, total } = store;
   return {
-    cart: store.cart,
-    total: store.total,
+    cart,
+    total,
   };
 };
 
