@@ -39,4 +39,4 @@ const CartContainer = ({ cart = [] }) => {
   );
 };
 
-export default CartContainer;
+export default connect()(CartContainer);
