@@ -39,4 +39,4 @@ const CartContainer = ({ cart = [] }) => {
   );
 };
 
-export default connect()(CartContainer);
+export default connect(mapStateToProps)(CartContainer);
