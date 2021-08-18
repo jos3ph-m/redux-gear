@@ -14,7 +14,7 @@ import { Provider } from 'react-redux';
 // initial store
 const initialStore = {
   cart: cartItems,
-  total: 0,
+  total: 1,
   amount: 5,
 };
 
