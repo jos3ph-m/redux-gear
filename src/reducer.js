@@ -5,13 +5,13 @@ function reducer(state, action) {
     return { ...state, cart: [] };
   }
   if (action.type === DECREASE) {
-    return console.log('you decreased');
+    console.log('you decreased');
   }
   if (action.type === INCREASE) {
-    return console.log('you increased');
+    console.log('you increased');
   }
   if (action.type === REMOVE) {
-    return console.log('you removed amount');
+    console.log('you removed amount');
   }
   return state;
 }
