@@ -32,4 +32,6 @@ const CartItem = ({ img, title, price, amount }) => {
   );
 };
 
+const mapDispatchToProps = () => {};
+
 export default connect(null, mapDispatchToProps)(CartItem);
