@@ -5,10 +5,10 @@ function reducer(state, action) {
     return { ...state, cart: [] };
   }
   if (action.type === DECREASE) {
-    return console.log(action.type);
+    return console.log('you decreased');
   }
   if (action.type === INCREASE) {
-    return console.log(action.type);
+    return console.log('you increased');
   }
   if (action.type === DECREASE) {
     return console.log(action.type);
