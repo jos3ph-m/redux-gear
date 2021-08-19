@@ -7,6 +7,12 @@ function reducer(state, action) {
   if (action.type === DECREASE) {
     return console.log(action.type);
   }
+  if (action.type === DECREASE) {
+    return console.log(action.type);
+  }
+  if (action.type === DECREASE) {
+    return console.log(action.type);
+  }
   return state;
 }
 
