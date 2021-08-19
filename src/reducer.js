@@ -10,8 +10,8 @@ function reducer(state, action) {
   if (action.type === INCREASE) {
     return console.log('you increased');
   }
-  if (action.type === DECREASE) {
-    return console.log(action.type);
+  if (action.type === REMOVE) {
+    return console.log('you removed amount');
   }
   return state;
 }
