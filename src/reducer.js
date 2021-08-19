@@ -1,4 +1,4 @@
-import { DECREASE, INCREASE, CLEAR_CART } from './actions';
+import { DECREASE, INCREASE, CLEAR_CART, REMOVE } from './actions';
 
 function reducer(state, action) {
   if (action.type === CLEAR_CART) {
