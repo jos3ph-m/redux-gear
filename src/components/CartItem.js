@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { INCREASE, DECREASE, REMOVE } from '../actions';
 
 const CartItem = ({ img, title, price, amount }) => {
   return (
