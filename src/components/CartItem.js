@@ -32,4 +32,4 @@ const CartItem = ({ img, title, price, amount }) => {
   );
 };
 
-export default CartItem;
+export default connect()(CartItem);
