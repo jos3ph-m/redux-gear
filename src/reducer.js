@@ -11,7 +11,7 @@ function reducer(state, action) {
     console.log('you increased');
   }
   if (action.type === REMOVE) {
-    console.log(action.id);
+    console.log(action.payload.id);
   }
   return state;
 }
