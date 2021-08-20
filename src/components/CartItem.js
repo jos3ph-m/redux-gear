@@ -35,6 +35,7 @@ const CartItem = ({ img, title, price, amount, remove }) => {
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
+  console.log(ownProps);
   return { remove: () => dispatch({ type: REMOVE, payload: { id: 1 } }) };
 };
 
