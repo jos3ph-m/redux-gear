@@ -5,7 +5,11 @@ function reducer(state, action) {
     return { ...state, cart: [] };
   }
   if (action.type === DECREASE) {
-    console.log('you decreased');
+    let tempCart = state.cart.map((cartItem) => {
+      if (cartItem.id === action.payload.id) {
+      }
+      return cartItem;
+    });
   }
   if (action.type === INCREASE) {
     let tempCart = state.cart.map((cartItem) => {
