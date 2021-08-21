@@ -9,7 +9,7 @@ function reducer(state, action) {
   }
   if (action.type === INCREASE) {
     let tempCart = state.cart.map((cartItem) => {
-      if (cartItem) {
+      if (cartItem.id === action.payload.id) {
       }
       return cartItem;
     });
