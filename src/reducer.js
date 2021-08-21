@@ -9,7 +9,6 @@ function reducer(state, action) {
   }
   if (action.type === INCREASE) {
     let tempCart = state.cart.map((cartItem) => {
-      console.log(cartItem);
       return cartItem;
     });
     return { ...state, cart: tempCart };
