@@ -8,6 +8,7 @@ function reducer(state, action) {
     console.log('you decreased');
   }
   if (action.type === INCREASE) {
+    return { ...state };
   }
   if (action.type === REMOVE) {
     return {
