@@ -8,7 +8,7 @@ function reducer(state, action) {
     console.log('you decreased');
   }
   if (action.type === INCREASE) {
-    let tempCart = [];
+    let tempCart = state.cart.map(() => {});
     return { ...state, cart: tempCart };
   }
   if (action.type === REMOVE) {
