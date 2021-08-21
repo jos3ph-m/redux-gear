@@ -10,7 +10,7 @@ function reducer(state, action) {
   if (action.type === INCREASE) {
     let tempCart = state.cart.map((cartItem) => {
       if (cartItem.id === action.payload.id) {
-        cartItem = { ...cartItem, amount };
+        cartItem = { ...cartItem, amount: cartItem.amount + 1 };
       }
       return cartItem;
     });
