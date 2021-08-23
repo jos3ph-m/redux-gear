@@ -35,7 +35,7 @@ function reducer(state, action) {
     };
   }
   if (action.type === GET_TOTALS) {
-    let { total, amount } = state.cart.reducer(() => {}, {});
+    let { total, amount } = state.cart.reducer(() => {}, { total: 0 });
   }
   return state;
 }
