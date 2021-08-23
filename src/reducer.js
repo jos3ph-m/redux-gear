@@ -35,7 +35,7 @@ function reducer(state, action) {
     };
   }
   if (action.type === GET_TOTALS) {
-    console.log('totals');
+    let { total, amount } = state.cart.reducer(() => {}, {});
   }
   return state;
 }
