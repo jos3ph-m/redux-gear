@@ -5,6 +5,7 @@ function reducer(state, action) {
     return { ...state, cart: [] };
   }
   if (action.type === DECREASE) {
+    let tempCart = [];
     return { ...state, cart: tempCart };
   }
   if (action.type === INCREASE) {
