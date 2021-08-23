@@ -46,6 +46,7 @@ function reducer(state, action) {
         amount: 0,
       }
     );
+    return { ...state, total, amount };
   }
   return state;
 }
