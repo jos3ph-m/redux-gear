@@ -37,6 +37,7 @@ function reducer(state, action) {
   if (action.type === GET_TOTALS) {
     let { total, amount } = state.cart.reduce(
       (cartTotal, cartItem) => {
+        const { price, amount } = cartItem;
         console.log(cartItem);
         return cartTotal;
       },
