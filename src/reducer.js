@@ -35,6 +35,7 @@ function reducer(state, action) {
     };
   }
   if (action.type === GET_TOTALS) {
+    console.log('totals');
   }
   return state;
 }
