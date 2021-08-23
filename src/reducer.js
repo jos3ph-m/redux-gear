@@ -9,7 +9,9 @@ function reducer(state, action) {
       if (cartItem.id === action.payload.id) {
         cartItem = { ...cartItem, amount: cartItem.amount - 1 };
         if (cartItem.amount < 1) {
-          cartItem.amount = 0;
+          tempCart = state.cart.filter(
+            (cartItem) => cartItem.id !== action.payload.id
+          );
         }
       }
       return cartItem;
