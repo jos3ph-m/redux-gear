@@ -13,6 +13,7 @@ function reducer(state, action) {
     } else {
       tempCart = state.cart.map((cartItem) => {
         if (cartItem.id === action.payload.id) {
+          cartItem = { ...cartItem, amount: cartItem.amount - 1 };
         }
       });
     }
