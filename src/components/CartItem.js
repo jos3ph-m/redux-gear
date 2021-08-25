@@ -39,7 +39,7 @@ const CartItem = ({
             if (amount === 1) {
               return remove();
             } else {
-              return decrease();
+              return toggle("dec");
             }
           }}
         >
