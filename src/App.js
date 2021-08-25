@@ -19,7 +19,7 @@ const initialStore = {
 };
 
 // store
-const store = createStore(reducer, initialStore);
+const store = createStore(reducer);
 
 function App() {
   // cart setup
