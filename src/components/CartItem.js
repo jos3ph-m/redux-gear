@@ -10,6 +10,7 @@ const CartItem = ({
   remove,
   increase,
   decrease,
+  toggle,
 }) => {
   return (
     <div className="cart-item">
