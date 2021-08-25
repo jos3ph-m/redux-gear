@@ -1,4 +1,11 @@
-import { DECREASE, INCREASE, CLEAR_CART, REMOVE, GET_TOTALS } from './actions';
+import {
+  DECREASE,
+  INCREASE,
+  CLEAR_CART,
+  REMOVE,
+  GET_TOTALS,
+  TOGGLE_AMOUNT,
+} from './actions';
 
 function reducer(state, action) {
   if (action.type === CLEAR_CART) {
@@ -45,6 +52,8 @@ function reducer(state, action) {
     );
     total = parseFloat(total.toFixed(2));
     return { ...state, total, amount };
+  }
+  if (action.type === TOGGLE_AMOUNT) {
   }
   return state;
 }
