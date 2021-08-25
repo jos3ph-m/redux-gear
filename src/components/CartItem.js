@@ -6,6 +6,7 @@ import {
   REMOVE,
   TOGGLE_AMOUNT,
   removeItem,
+  increaseItem,
 } from '../actions';
 
 const CartItem = ({

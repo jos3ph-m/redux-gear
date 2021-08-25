@@ -8,3 +8,7 @@ export const TOGGLE_AMOUNT = 'TOGGLE_AMOUNT';
 export const removeItem = (id) => {
   return { type: REMOVE, payload: { id } };
 };
+
+export const increaseItem = (id) => {
+  return { type: INCREASE, payload: { id } };
+};
