@@ -54,6 +54,12 @@ function reducer(state, action) {
     return { ...state, total, amount };
   }
   if (action.type === TOGGLE_AMOUNT) {
+    return {
+      ...state,
+      cart: state.cart.map((cartItem) => {
+        return cartItem;
+      }),
+    };
   }
   return state;
 }
