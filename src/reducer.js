@@ -57,6 +57,11 @@ function reducer(state, action) {
     return {
       ...state,
       cart: state.cart.map((cartItem) => {
+        if (cartItem.id === action.payload.id) {
+          if (action.payload.toggle === 'inc') {
+            return (cartItem = {});
+          }
+        }
         return cartItem;
       }),
     };
