@@ -58,6 +58,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     remove: () => dispatch({ type: REMOVE, payload: { id } }),
     increase: () => dispatch({ type: INCREASE, payload: { id } }),
     decrease: () => dispatch({ type: DECREASE, payload: { id, amount } }),
+    toggle: (toggle) =>
+      dispatch({ type: TOGGLE_AMOUNT, payload: { id, toggle } }),
   };
 };
 
