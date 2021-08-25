@@ -7,6 +7,8 @@ import {
   TOGGLE_AMOUNT,
 } from './actions';
 
+import cartItems from './cart-items';
+
 // initial store
 const initialStore = {
   cart: cartItems,
