@@ -59,7 +59,10 @@ function reducer(state, action) {
       cart: state.cart.map((cartItem) => {
         if (cartItem.id === action.payload.id) {
           if (action.payload.toggle === 'inc') {
-            return (cartItem = {});
+            return (cartItem = { ...cartItem, amount: cartItem.amount + 1 });
+          }
+          if (action.payload.toggle === 'dec') {
+            return (cartItem = { ...cartItem, amount: cartItem.amount - 1 });
           }
         }
         return cartItem;
