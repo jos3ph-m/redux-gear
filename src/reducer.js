@@ -16,8 +16,7 @@ const initialStore = {
   amount: 0,
 };
 
-
-function reducer(state = , action) {
+function reducer(state = initialStore, action) {
   if (action.type === CLEAR_CART) {
     return { ...state, cart: [] };
   }
