@@ -7,6 +7,7 @@ import {
   TOGGLE_AMOUNT,
   removeItem,
   increaseItem,
+  decreaseItem,
 } from '../actions';
 
 const CartItem = ({
@@ -65,7 +66,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   return {
     remove: () => dispatch(removeItem(id)),
     increase: () => dispatch(increaseItem(id)),
-    decrease: () => dispatch({ type: DECREASE, payload: { id, amount } }),
+    decrease: () => dispatch(decreaseItem()),
     toggle: (toggle) =>
       dispatch({ type: TOGGLE_AMOUNT, payload: { id, toggle } }),
   };
