@@ -16,3 +16,5 @@ export const increaseItem = (id) => {
 export const decreaseItem = (id, amount) => {
   return { type: DECREASE, payload: { id, amount } };
 };
+
+export const toggleItem = (id, toggle) => {};
