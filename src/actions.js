@@ -12,3 +12,5 @@ export const removeItem = (id) => {
 export const increaseItem = (id) => {
   return { type: INCREASE, payload: { id } };
 };
+
+export const decreaseItem = (id, amount) => {};
