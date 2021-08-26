@@ -14,5 +14,5 @@ export const increaseItem = (id) => {
 };
 
 export const decreaseItem = (id, amount) => {
-  return {};
+  return {type: };
 };
