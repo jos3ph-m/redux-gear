@@ -18,5 +18,5 @@ export const decreaseItem = (id, amount) => {
 };
 
 export const toggleItem = (id, toggle) => {
-  type: TOGGLE_AMOUNT, payload:
+  return { type: TOGGLE_AMOUNT, payload: {} };
 };
